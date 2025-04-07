@@ -1,0 +1,38 @@
+# Dependencies
+/frontend/node_modules
+/frontend/public
+/backend/venv
+/backend/.venv
+/backend/__pycache__
+*.pyc
+
+# Build outputs
+/build
+/dist
+/out
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+/.idea
+/.vscode
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Docker
+.dockerignore

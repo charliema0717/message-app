@@ -1,0 +1,7 @@
+# Import all production dependencies
+-r requirements.txt
+
+# Testing dependencies
+pytest==7.4.2
+pytest-flask==1.2.0
+pytest-cov==4.1.0

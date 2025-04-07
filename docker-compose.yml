@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: message-app
+    ports:
+      - "3000:3000"  # Frontend UI
+      - "5000:5000"  # Backend API
+    environment:
+      - FLASK_ENV=production
+      - REACT_APP_API_URL=http://localhost:5000
+    restart: always
