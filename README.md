@@ -93,5 +93,34 @@ Once the application is running:
 | `/api/messages?page=1&size=10` | GET    | Retrieve paginated messages | Authenticated |
 | `/api/messages`                | POST   | Create a new message        | Admin only    |
 
+## Development
 
+### Local Development Setup
 
+If you want to develop the application locally without Docker:
+
+#### 1. **Backend setup**:
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+#### 2. **Frontend setup**:
+```bash
+cd frontend
+npm install
+npm start
+```
+### Running Tests
+```bash
+# Backend tests
+cd backend
+pytest
+
+# Frontend tests
+cd frontend
+npm test
+```
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
